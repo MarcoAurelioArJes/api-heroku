@@ -13,7 +13,7 @@ connection.connect(error => {
 });
 
 const app = expressCustom();
-const PORT = 3500;
+const PORT = 8080;
 app.listen(PORT, () => {
     console.log(`Servidor inicializado na porta ${PORT}`);
 });
