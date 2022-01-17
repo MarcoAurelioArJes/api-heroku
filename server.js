@@ -9,11 +9,11 @@ connection.connect(error => {
         console.log('Conexão estabelecida com sucesso!!!');
 
         Tables.init(connection);
-
-        const app = expressCustom();
-        const PORT = 3500;
-        app.listen(PORT, () => {
-            console.log(`Servidor inicializado na porta ${PORT}`);
-        });
     }
+});
+
+const app = expressCustom();
+const PORT = 3500;
+app.listen(PORT, () => {
+    console.log(`Servidor inicializado na porta ${PORT}`);
 });
